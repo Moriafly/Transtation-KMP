@@ -191,13 +191,13 @@ tasks.register<Exec>("encryptFunnyJs") {
     }
 }
 
-tasks.register<Exec>("signApk") {
-    // 执行根目录下的 sign_new_key.py
-    val signNewKey = rootProject.file("sign_new_key.py")
-
-    if (signNewKey.exists()) {
-        commandLine("python", signNewKey.path, rootDir.path)
-    } else {
-        printHello(this)
-    }
-}
+//tasks.register<Exec>("signApk") {
+//    // 执行根目录下的 sign_new_key.py
+//    val signNewKey = rootProject.file("sign_new_key.py")
+//
+//    if (signNewKey.exists()) {
+//        commandLine("python", signNewKey.path, rootDir.path)
+//    } else {
+//        printHello(this)
+//    }
+//}
